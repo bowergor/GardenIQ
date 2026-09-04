@@ -1,0 +1,14 @@
+[Unit]
+Description=GardenIQ - Controle de Irrigacao
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/jardim
+ExecStart=/usr/bin/python3 /home/pi/jardim/irrigacao.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
