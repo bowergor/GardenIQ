@@ -32,7 +32,7 @@ jardim/
 ## Instalação
 
 ```bash
-git clone <url-do-repo>
+git clone <por a url depois>
 cd jardim
 pip3 install flask spidev RPi.GPIO
 ```
